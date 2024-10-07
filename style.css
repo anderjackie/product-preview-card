@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Montserrat;
+  font-weight: 500 700;
+  src: url("./assets/fonts/Montserrat.ttf");
+}
+
+@font-face {
+  font-family: Fraunces;
+  font-weight: 500;
+  src: url("./assets/fonts/Fraunces.ttf");
+}
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --dark-blue: hsl(212, 21%, 14%);
+  --grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --weight-1: 500;
+  --weight-2: 700;
+}
+
+body {
+  font-size: 14px;
+  font-weight: var(--weight-1);
+}
