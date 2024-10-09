@@ -12,6 +12,7 @@
 
 :root {
   --dark-cyan: hsl(158, 36%, 37%);
+  --darker-cyan: hsl(157 46% 17%);
   --cream: hsl(30, 38%, 92%);
   --dark-blue: hsl(212, 21%, 14%);
   --grayish-blue: hsl(228, 12%, 48%);
@@ -116,6 +117,10 @@ button {
   color: var(--white);
   font-size: .9rem;
   font-weight: var(--weight-2);
+}
+
+button:hover {
+  background-color: var(--darker-cyan);
 }
 
 @media screen and (min-width: 50rem) {
