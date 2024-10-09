@@ -35,7 +35,6 @@ body {
 
 main {
   padding: 1.5rem 1rem 1.5rem 1rem;
-  max-width: 35rem;
 }
 
 .container {
@@ -45,37 +44,47 @@ main {
   background-color: var(--white);
 }
 
-.container picture, img {
+picture {
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
 }
 
-.container .product {
+.product-image {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.product {
   display: flex;
   flex-direction: column;
   gap: .8rem;
-  padding: 1.2rem;
+  /*! padding: 1.2rem; */
+  padding: 1.2rem 1.5rem 1.2rem 1.2rem;
 }
 
-.container .title {
+.title {
   font-weight: var(--weight-1);
   font-size: .7rem;
   letter-spacing: .3rem;
 }
 
-.container h1 {
+h1 {
   font-family: Fraunces;
   line-height: 1.0;
   color: var(--dark-blue);
+  font-size: 2rem;
 }
 
-.container .description {
+.description {
   font-weight: var(--weight-1);
-  font-size: .8rem;
+  font-size: .9rem;
   line-height: 1.6;
 }
 
-.container .price {
+.price {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -85,16 +94,16 @@ main {
 
 .tag {
   font-family: Fraunces;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--dark-cyan);
 }
 
 .from {
-  font-size: .7rem;
+  font-size: .9rem;
   text-decoration: line-through;
 }
 
-.container button {
+button {
   display: flex;
   padding: .8rem;
   justify-content: center;
@@ -105,24 +114,28 @@ main {
   border: none;
   background-color: var(--dark-cyan);
   color: var(--white);
-  font-size: .8rem;
+  font-size: .9rem;
   font-weight: var(--weight-2);
 }
 
-@media screen and (min-width: 90rem) {
+@media screen and (min-width: 50rem) {
   .container {
     flex-direction: row;
   }
 
-  .container > .product {
+  .product {
     justify-content: space-between;
     padding: 2rem;
   }
 
-  .container picture, source, img {
-    object-fit: contain;
+  .product-image {
+    max-width: 300px;
     border-top-left-radius: inherit;
     border-top-right-radius: unset;
     border-bottom-left-radius: inherit;
+  }
+
+  .product {
+    max-width: 300px;
   }
 }
