@@ -133,6 +133,11 @@ button:hover {
     padding: 2rem;
   }
 
+  picture {
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+  }
+
   .product-image {
     max-width: 300px;
     border-top-left-radius: inherit;
